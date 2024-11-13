@@ -1,15 +1,10 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import { Onest } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const onest = Onest({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-onest",
 });
 
 export const metadata = {
@@ -21,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`w-full min-h-screen ${onest.variable} antialiased `}
       >
         {children}
       </body>
