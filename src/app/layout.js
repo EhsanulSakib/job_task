@@ -3,7 +3,7 @@ import { Onest } from "next/font/google";
 
 const onest = Onest({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-onest",
 });
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`w-full min-h-screen ${onest.variable} antialiased `}
+        className={`w-full min-h-screen font-onest antialiased `}
       >
         {children}
       </body>
