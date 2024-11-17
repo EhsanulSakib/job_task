@@ -56,7 +56,7 @@ const Services = () => {
 
 
       <div className='w-full relative'>
-        <Image src={'/assets/service.png'} alt='services' width={1200} height={1200} className='min-w-[400px] min-h-[450px] rounded-xl object-cover object-center' />
+        <Image src={'/assets/service.png'} alt='services' width={1200} height={1200} className='min-w-[250px] md:min-w-[400px] min-h-[250px] md:min-h-[450px] rounded-xl object-cover object-center' />
 
         <div className='absolute top-1/3 -left-6 z-0'>
           <Image src={'/assets/icons/verified.png'} alt="line" width={300} height={300} className='w-16 h-16' />
