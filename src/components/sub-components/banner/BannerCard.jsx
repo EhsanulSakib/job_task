@@ -6,9 +6,9 @@ const BannerCard = () => {
     <div className='w-11/12 md:w-full relative flex flex-col items-center rounded-md'>
       <Image src={'/assets/bannerImage.png'} alt="banner" width={300} height={300} className='rounded-xl w-full' />
 
-      <di className='absolute top-1/3 -left-6 z-0'>
+      <div className='absolute top-1/3 -left-6 z-0'>
         <Image src={'/assets/icons/leaf.png'} alt="line" width={300} height={300} className='w-16 h-16' />
-      </di>
+      </div>
 
 
       <div className='absolute bottom-0 z-10 flex flex-col items-center gap-2 bg-white/70 w-[98%] rounded-xl mb-2'>

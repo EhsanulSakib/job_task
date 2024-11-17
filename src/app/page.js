@@ -1,6 +1,7 @@
 import Banner from '@/components/banner/Banner';
 import Courses from '@/components/courses/Courses';
 import Navbar from '@/components/navbar/Navbar';
+import Services from '@/components/services/Services';
 import React from 'react';
 
 const page = () => {
@@ -9,6 +10,7 @@ const page = () => {
       <Navbar />
       <Banner />
       <Courses />
+      <Services />
     </div>
   );
 };
