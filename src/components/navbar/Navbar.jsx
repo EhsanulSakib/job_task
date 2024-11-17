@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react';
-import cart from '../../assets/cart.png'
 import Image from 'next/image';
 
 // import navlinks
@@ -68,7 +67,7 @@ const Navbar = () => {
       </div>
 
       <div className='flex gap-2 lg:gap-6 items-center'>
-        <Image src={cart} alt="Cart Icon" className="w-8 h-8 cursor-pointer" />
+        <Image src={'/assets/cart.png'} width={30} height={30} alt="Cart Icon" className="w-8 h-8 cursor-pointer" />
         <button className='bg-primary text-white py-2 px-4 rounded-full cursor-pointer'>Login</button>
 
       </div>
