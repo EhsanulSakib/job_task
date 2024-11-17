@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
 import { courseData } from '../sub-components/courses/CourseData';
 import CourseCard from '../sub-components/courses/CourseCard';
 
@@ -22,7 +21,7 @@ const OfferedCourses = ({ sliderRef }) => {
       }}
     >
       {
-        courses.map((course, index) => (
+        courses?.map((course, index) => (
           <SwiperSlide key={index} className='flex flex-col gap-4 w-1/2'>
             <CourseCard course={course} />
           </SwiperSlide>

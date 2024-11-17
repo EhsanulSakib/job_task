@@ -21,7 +21,7 @@ const Courses = () => {
   };
 
   return (
-    <div className='flex md:my-8 flex-col justify-between w-full xl:w-4/5 px-[1%] xl:px-[0%] xl:ml-[20%] mx-auto gap-8 py-4 lg:py-8 xl:py-12'>
+    <div className='flex md:my-8 flex-col justify-between w-full xl:w-4/5 px-[1%] xl:px-[0%] xl:ml-[20%] mx-auto gap-8 py-4 lg:py-8'>
       <div className='w-full lg:w-2/3 flex items-end justify-between'>
         <div className='flex flex-col gap-4 w-4/5 md:w-[70%]'>
           <Title title={title} style={style} />

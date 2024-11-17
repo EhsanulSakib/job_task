@@ -10,7 +10,7 @@ const Services = () => {
 
 
   return (
-    <div className='flex flex-col md:flex-row my-8 py-4 md:py-0 justify-between items-center w-full xl:w-3/5 px-[1%] xl:px-[0%] mx-auto gap-12'>
+    <div className='flex flex-col md:flex-row my-8 py-4 lg:py-8 justify-between items-center w-full xl:w-3/5 px-[1%] xl:px-[0%] mx-auto gap-12'>
 
       <div className='flex flex-col gap-8'>
         <Title title={title} style={style} />

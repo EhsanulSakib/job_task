@@ -8,10 +8,10 @@ import { TiTick } from "react-icons/ti";
 
 const CourseCard = ({ course }) => {
   return (
-    <div className='w-full rounded-2xl flex flex-col items-center justify-center overflow-hidden border border-b-4 shadow-sm cursor-pointer duration-150 transform ease-out hover:bg-[#9998E11A]'>
+    <div className='min-h-[600px] w-full rounded-2xl flex flex-col items-center justify-between overflow-hidden border border-b-4 shadow-sm cursor-pointer duration-150 transform ease-out hover:bg-[#9998E11A]'>
       <Image src={course.backgroundImage} alt={course.title} width={1000} height={1000} className='w-[600px] h-[180px] object-cover object-center scale-110' />
 
-      <div className='w-full py-8 px-4 flex flex-col justify-between'>
+      <div className='min-h-[400px] w-full py-8 px-4 flex flex-col justify-between'>
         <div className='flex flex-col gap-3'>
           <div className='flex gap-1 items-center'>
             <h2 className='p-1 bg-[#FF97001A] border border-[#FF970080] rounded-md'>{course.level}</h2>
@@ -46,7 +46,7 @@ const CourseCard = ({ course }) => {
 
           <div className='flex justify-between items-center'>
             <div className='flex items-center gap-2'>
-              <Image src={course.instructorImage} alt={course.instructorName} width={1000} height={1000} className='w-12 h-12 object-cover object-center rounded-full' />
+              <Image src={course.instructorImage} alt={course.instructor} width={1000} height={1000} className='w-12 h-12 object-cover object-center rounded-full' />
               <h2 className='font-bold text-lg'>{course.instructor}</h2>
             </div>
 
